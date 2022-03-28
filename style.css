@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+.container{
+    display: flex;
+    width: 95%;
+    margin: 4rem auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first_img_box, .second_img_box, .third_img_box{
+    margin: 3rem 0;
+    width: 30%;
+    height: 25rem;
+}  
+
+.banner1, .banner2, .banner3, .banner4{
+    width: 30%;
+    position: absolute;
+}
+
+img{
+    height: 25rem;
+    width: 93%;
+    position: absolute;
+    animation: fade-in 3s linear infinite;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.banner1{
+    animation: slide1 12s linear infinite;
+}
+.banner2{
+    animation: slide2 12s linear infinite;
+}
+.banner3{
+    animation: slide3 12s linear infinite;
+}
+.banner4{
+    animation: slide4 12s linear infinite;
+}
+
+@keyframes slide1{
+    
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes slide2{
+    
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3{
+    
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide4{
+    
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+
